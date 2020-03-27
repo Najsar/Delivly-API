@@ -1,0 +1,7 @@
+{
+  "username": "delivly_user",
+  "password": "w1co1vCs0vOlm1Ho",
+  "database": "delivly",
+  "host": "127.0.0.1",
+  "dialect": "mysql"
+}

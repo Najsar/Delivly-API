@@ -1,0 +1,29 @@
+{
+  "name": "delivly-api",
+  "version": "0.0.1",
+  "description": "REST API for Delivly Game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Patryk Najsarek",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.6",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2",
+    "sequelize": "^5.21.3",
+    "sequelize-cli": "^5.5.1",
+    "socket.io": "^2.3.0",
+    "socket.io-cookie": "0.0.1",
+    "url": "^0.11.0",
+    "ws": "^7.2.3"
+  }
+}
