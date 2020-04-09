@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "test": "jest --forceExit",
     "dev": "nodemon index.js"
   },
   "author": "Patryk Najsarek",
@@ -16,6 +17,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.6",
+    "jest": "^25.3.0",
     "mysql2": "^2.1.0",
     "nodemailer": "^6.4.2",
     "nodemon": "^2.0.2",
@@ -23,6 +25,7 @@
     "sequelize-cli": "^5.5.1",
     "socket.io": "^2.3.0",
     "socket.io-cookie": "0.0.1",
+    "supertest": "^4.0.2",
     "url": "^0.11.0",
     "ws": "^7.2.3"
   }

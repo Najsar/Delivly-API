@@ -71,10 +71,10 @@ user.prototype.dataLogin = async function(user, pass) {
         }) );
         var dt = new Date();
         dt.setTime(dt.getTime() + (24 * 60 * 60 * 1000));
-        models.sessions.create({ user_id: user_db.id, session: session, date:  dt})
-        .then(session => {
-            log.log("LOGIN", 'Session saved as id: '+session.dataValues.id, 4);
-        });
+        var saved_session = await models.sessions.create({ user_id: user_db.id, session: session, date:  dt});
+        if(saved_session) {
+            log.log("LOGIN", 'Session saved as id: '+saved_session.id, 4);
+        }
         this.id = user_db.id;
         this.nick = user_db.nick;
         this.email = user_db.email;
